@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to right, white,red);
+}
+h1{
+    letter-spacing: 10px;
+    font-size: 40px;
+    color: blueviolet;
+}
+h3{
+    color: darkviolet;
+}
+button{
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color: lightgreen;
+}
