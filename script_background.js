@@ -5,7 +5,7 @@ const setBackground = () => {
     let body = document.querySelector("body");
     let css = document.querySelector("#css");
     body.style.background = "linear-gradient( to right, "+color1.value + ", " +color2.value;
-    css.textContent = body.style.background+";";
+    css.textContent = "linear-gradient( to right, "+color1.value + ", " +color2.value+";";
 }
 
 const genRandomHex = () => {
