@@ -1,11 +1,20 @@
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
+document.querySelector("#hexVal1").value = "#ff0000";
+document.querySelector("#hexVal2").value = "#ffffff";
+var color1 = document.querySelector("#hexVal1");
+var color2 = document.querySelector("#hexVal2");
+
+const init = () => {
+    previewDiv1.style.backgroundColor = color1.value;
+    previewDiv2.style.backgroundColor = color2.value;
+}
+
+init();
 
 const setBackground = () => {
     let body = document.querySelector("body");
     let css = document.querySelector("#css");
     body.style.background = "linear-gradient( to right, "+color1.value + ", " +color2.value;
-    css.textContent = "linear-gradient( to right, "+color1.value + ", " +color2.value+";";
+    css.textContent = "linear-gradient( to right, "+color1.value + ", " +color2.value +") ;";
 }
 
 const genRandomHex = () => {
@@ -32,7 +41,10 @@ if(rand.length <6){
 const randomizeColors = () => {
     color1.value = "#" + genRandomHex();
     color2.value = "#" + genRandomHex();
+    previewDiv1.style.backgroundColor = color1.value;
+    previewDiv2.style.backgroundColor = color2.value;
 }
+
 
 setBackground();
 
@@ -40,7 +52,12 @@ var button = document.querySelector("button");
 button.addEventListener("click",randomizeColors);
 button.addEventListener("click",setBackground);
 
-color1.addEventListener("input",setBackground);
+canvas[0].addEventListener("mousemove",()=>{
+   setPreviewColor(pixel1,previewDiv1);
+setBackground();
+});
 
-color2.addEventListener("input",setBackground);
-
+canvas[1].addEventListener("mousemove",()=>{
+     setPreviewColor(pixel2,previewDiv2);
+setBackground();
+});
