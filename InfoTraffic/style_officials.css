@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 2rem;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+header{
+text-align: center;
+margin: 2rem auto;
+}
+header > h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+}
+header > p{
+    font-size: 1.5rem;
+}
+
+.official{
+    padding: 1.5rem;
+    background-color: rgba(110, 108, 223, 0.87);
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.5);
+    margin-bottom: 5rem;
+}
+.official-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.official-img{
+    width: 100%;
+    height: 100%;
+}
