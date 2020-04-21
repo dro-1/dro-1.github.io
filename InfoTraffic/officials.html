@@ -6,38 +6,49 @@
         <title>
             Traffic Officials
         </title>
+        <link rel="stylesheet" type="text/css" href="./styles/iconfonts.css">
         <link rel="stylesheet" type="text/css"
             href="./styles/style_officials.css">
     </head>
     <body>
-        <header>
-            <h1>Traffic officials</h1>
-            <p> These are the various officials on Lagos roads</p>
+        
+
+        <header class="main-header">
+            <span class="left">
+            <p>INFO<span>Traffic</span></p> 
+                </span>
+            <span class="right">
+            <a class='lnk-login' href="#"> Login </a>
+            <a class='lnk-signup' href="#"> Signup </a>
+            </span>
         </header>
-        <div class="official">
-            <h2 class="official-header">Vehicle inspection officer (VIO)</h2>
-            <img src="images/official-1.jpg" alt="Image of vehicle inspection officer" class="official-img">
-        </div>
-        <div class="official">
-            <h2 class="official-header">lagos state traffic management authority (lastma)</h2>
-            <img src="lastma.jpg" alt="Image of vehicle inspection officer" class="official-img">
-        </div>
-        <div class="official">
-            <h2 class="official-header">federal road safety corps (frsc)</h2>
-            <img src="images/official-3.jpg" alt="Image of vehicle inspection officer" class="official-img">
-        </div>
-        <div class="official">
-            <h2 class="official-header">traffic warden</h2>
-            <img src="images/official-5.jpg" alt="Image of vehicle inspection officer" class="official-img">
-        </div>
-        <div class="official">
-            <h2 class="official-header">nigerian police</h2>
-            <img src="images/official-6.jpg" alt="Image of vehicle inspection officer" class="official-img">
-        </div>
-        <div class="official">
-            <h2 class="official-header">special anti-robbery squad (sars)</h2>
-            <img src="images/official-4.jpg" alt="Image of vehicle inspection officer" class="official-img">
-        </div>
-       
+        <div class="carousel-container">
+            
+            <div class="carousel-slide">
+
+                <i class="icon-arrows-left prev"></i>
+
+                <figure class="sign sign-1">
+                    <figcaption class="sign-header">Vehicle inspection officer</figcaption>
+                </figure>
+                <figure class="sign sign-2">
+                    <figcaption class="sign-header">lagos state traffic management authority (lastma)</figcaption>
+                </figure>
+                <figure class="sign sign-3">
+                    <figcaption class="sign-header">federal road safety corps (frsc)</figcaption>
+                </figure>
+                <figure class="sign sign-4">
+                    <figcaption class="sign-header">traffic warden</figcaption>
+                </figure>
+                <figure class="sign sign-5">
+                    <figcaption class="sign-header">nigerian police</figcaption>
+                </figure>
+                <figure class="sign sign-6">
+                    <figcaption class="sign-header">special anti-Robbery squad (sars)</figcaption>
+                </figure>
+                <i class="icon-arrows-right next"></i>
+            </div>
+            
+        <script src="scripts/script_official.js"></script>
     </body>
 </html>

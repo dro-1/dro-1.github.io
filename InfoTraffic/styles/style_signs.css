@@ -58,7 +58,7 @@
         margin: auto;
     }
     .sign{
-        height: 35rem;
+        min-height: 90.6vh;
         width: 100%;
         display: block;
         background-size: contain;
