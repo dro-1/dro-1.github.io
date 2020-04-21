@@ -1,0 +1,116 @@
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        font-family: sans-serif;
+    }
+    .container{
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, rgba(98, 132, 226, 0.5),rgba(0, 17, 253, 0.664));
+    }
+    .main-header{
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    }
+    .left{
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: start;
+        margin: 0;
+    }
+    .left p {
+        padding-top: .3rem;
+        margin:0;
+        color: rgba(57, 186, 233, 0.849);
+    }
+    .left p > span{
+        color: #000;
+    }
+    .right{
+        padding-top: .3rem;
+    }
+    .right > a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: rgba(46, 166, 214, 0.849);
+        transition: all 0.2s;
+    }
+    .right > a:hover{
+        background-color: rgba(46, 166, 214, 0.849) ;
+        color: #fff;
+        padding: .7rem 1.4rem;
+        border-radius: 2rem;
+    }
+    .right > a:first-child{
+        margin-right: .6rem;
+    }
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    .carousel-container{
+        width: 100%;
+        max-width:900px;
+        margin: auto;
+    }
+    .sign{
+        height: 35rem;
+        width: 100%;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        transition: all 1s;
+    }
+    .sign-1{
+       
+        background-image: linear-gradient(to right bottom, rgba(214, 210, 210, 0.363), rgba(0, 0, 0, 0.089)), url(../images/sign-1.jpg);
+        
+    }
+    .sign-2{
+        background-image: linear-gradient(to right bottom, rgba(214, 210, 210, 0.363), rgba(0, 0, 0, 0.089)), url(../images/sign-4.jpg);
+    }
+
+    .sign-3{
+        background-image: linear-gradient(to right bottom, rgba(214, 210, 210, 0.363), rgba(0, 0, 0, 0.089)), url(../images/sign-5.jpg);
+    }
+    .sign-4{
+        background-image: linear-gradient(to right bottom, rgba(214, 210, 210, 0.363), rgba(0, 0, 0, 0.089)), url(../images/sign-2.jpg);
+    }
+    .sign-5{
+        background-image: linear-gradient(to right bottom, rgba(214, 210, 210, 0.363), rgba(0, 0, 0, 0.089)), url(../images/sign-3.jpg);
+    }
+    .sign-header{
+        text-align: center;
+        padding: .5rem;
+        background-color: rgba(104, 131, 204, 0.555);
+        width:50%;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .carousel-slide{
+        position: relative;
+    }
+ i{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    z-index: 10;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 3rem;
+}
+.prev{
+    left: 1rem;
+}
+.next{
+    right: 1rem;
+}
+
+
+

@@ -4,29 +4,48 @@
         <title>Traffic Signs</title>
         <meta charset="UTF-8">
         <meta name='viewport' content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style_traffic.css">
+        <link rel="stylesheet" type="text/css" href="./styles/iconfonts.css">
+        <link rel="stylesheet" type="text/css" href="./styles/style_signs.css">
     </head>
     <body>
-        <div class="container">
-            <h1> Traffic signs</h1>
-            <figure class="sign">
-                <figcaption class="sign-header">Mandatory regulatory sign</figcaption>
-                <img src="images/sign-1.jpg" alt="Image of the mandatory regulatory signs" class="sign-image">
-            </figure>
-            <figure class="sign">
-                <figcaption class="sign-header">Prohibitive regulatory sign</figcaption>
-                <img src="images/sign-2.jpg" alt="Second Image of the Prohibitive regulatory signs" class="sign-image">
-                <img src="images/sign-3.jpg" alt="First Image of the Prohibitive regulatory signs" class="sign-image extra-image">
-            </figure>
-            <figure class="sign">
-                <figcaption class="sign-header">Warning sign</figcaption>
-                <img src="images/sign-4.jpg" alt="Image of the Warning signs" class="sign-image">
-            </figure>
-            <figure class="sign">
-                <figcaption class="sign-header">Informative sign</figcaption>
-                <img src="images/sign-5.jpg" alt="Image of the Informative signs" class="sign-image">
-            </figure>
+        <header class="main-header">
+            <span class="left">
+            <p>INFO<span>Traffic</span></p> 
+                </span>
+            <span class="right">
+            <a class='lnk-login' href="#"> Login </a>
+            <a class='lnk-signup' href="#"> Signup </a>
+            </span>
+        </header>
+        <div class="carousel-container">
             
-        </div>
+            <div class="carousel-slide">
+                <i class="icon-arrows-left prev"></i>
+                <figure class="sign sign-1">
+                    <figcaption class="sign-header">Mandatory regulatory sign</figcaption>
+                </figure>
+                <figure class="sign sign-2">
+                    <figcaption class="sign-header">Warning sign</figcaption>
+                </figure>
+                <figure class="sign sign-3">
+                    <figcaption class="sign-header">Informative sign</figcaption>
+                </figure>
+                <figure class="sign sign-4">
+                    <figcaption class="sign-header">Prohibitive regulatory sign</figcaption>
+                </figure>
+                <figure class="sign sign-5">
+                    <figcaption class="sign-header">Prohibitive regulatory sign</figcaption>
+                </figure>
+                <i class="icon-arrows-right next"></i>
+            </div>
+
+                <!-- <select id="signs">
+                    <option value="mrs">Mandatory Regulatory Signs</option>
+                    <option value="saab">Prohibitive Regulatory Signs</option>
+                    <option value="opel">Warning Sign</option>
+                    <option value="audi">Informative Sign</option>
+                </select> -->
+                
+        <script src="script_sign.js"></script>
     </body>
 </html>
