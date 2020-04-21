@@ -7,7 +7,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
-
 .main-header{
 display: flex;
 justify-content: space-between; 
@@ -27,8 +26,9 @@ background-color: rgb(255, 255, 255);
 .left p > span{
     color: #000;
 }
-
 footer{
+    padding: 1rem;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -51,7 +51,6 @@ footer{
     max-width: 80%;
     margin: 1rem auto;
 }
-
 .right{
     padding-top: .3rem;
 }
@@ -70,7 +69,6 @@ footer{
 .right > a:first-child{
     margin-right: .6rem;
 }
-
 button,button:visited{
    border: none;
    font-size: 1.2rem;
@@ -104,21 +102,6 @@ button:active{
     background-size: cover;
     background-position: center;
 }
-.item-1{
-    background-image: url(../images/SIGN1.jpg);
-}
-.item-2{
-    background-image: url( https://images.unsplash.com/photo-1580495052210-965e249ddcf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-}
-.item-3{
-    background-image: url(../images/lastma.jpg);
-}
-.item-4{
-    background-image: url(https://images.unsplash.com/photo-1580795479225-c50ab8c3348d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-}
-.item-5{
-    background-image: url(https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
-}
 .news-item .inner{
     position: absolute;
     padding: 1rem;
@@ -142,6 +125,18 @@ button:active{
     color: #fff;
     width: 100%;
     margin: 0 auto;
+}
+.item-1{
+    background-image: url(../images/SIGN1.jpg);
+}
+.item-2{
+    background-image: url( https://images.unsplash.com/photo-1580495052210-965e249ddcf0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+}
+.item-3{
+    background-image: url(../images/lastma.jpg);
+}
+.item-5{
+    background-image: url(https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
 }
 .header-image{
     position: relative;
@@ -204,7 +199,6 @@ transition: all 0.8s;
 .sign-up-activate{
     display: block;
 }
-
 .form > h4{
     font-size: 2rem;
     font-weight: 300;
@@ -216,11 +210,9 @@ svg{
     top: 2.5rem;
     right: 2.5rem;
 }
-
 svg:hover{
     cursor:pointer;
 }
-
 input{
     display: block;
     padding: 2rem;
@@ -233,18 +225,15 @@ input{
     border: 1px solid #e6e6e6;
     border-radius: 5px;
 }
-
 div.login > input:nth-child(3){
     margin-bottom: 1px;
 }
 div.sign-up > input:not(:last-child){
     margin-bottom: 1px;
 }
-
 .form > input:focus{
     border: 1px solid #55a0d1;
 }
-
 .form > button {
     padding: 1.5rem 0 1.5rem 0;
     color: #fff;
@@ -260,6 +249,35 @@ div.sign-up > input:not(:last-child){
 .sign-up > input{
     padding: 1rem;
 }
+.emergency-help-line{
+    background-color: white;
+}
+.emergency-help-line h1{
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.help-line-container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.help-line{
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    width: 10rem;
+}
+.help-line h2{
+    font-size: 1.2rem;
+    color: rgba(10, 94, 128, 0.849);
+    margin-bottom: .5rem;
+}
+.help-line li{
+    font-size: .8rem;
+}
 
 @media (min-width:750px ){
     .header-text{
@@ -268,14 +286,8 @@ div.sign-up > input:not(:last-child){
     .header-image > p{
         font-size: 4.8rem;
     }
-    .news-item{
-        display: inline-block;
-        width: 40%;
-        margin: 1rem;
-    }
 }
-
-@media (min-width:950px){
+@media (min-width:900px){
     .header-text{
         font-size: 2rem;
     }
@@ -284,7 +296,7 @@ div.sign-up > input:not(:last-child){
     }
     .news-item{
         display: inline-block;
-        width: 28%;
+        width: 45%;
         margin: 1rem;
     }
 }
@@ -295,9 +307,5 @@ div.sign-up > input:not(:last-child){
     .header-image > p{
         font-size: 7rem;
     }
-    .news-item{
-        display: inline-block;
-        width: 28%;
-        margin: 1rem;
-    }
+    
 }
